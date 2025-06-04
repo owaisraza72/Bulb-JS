@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .add {
+      background-color: brown;
+      text-align: center;
+    }
+
+    img {
+      width: 200px
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Hello</h1>
+
+
+
+  <img src="bulb1.png" id="img1">
+  <button id="btn" onclick="change()">change</button>
+
+
+  <script>
+
+    let image = document.getElementById('img1')
+
+    let currentImage = 1
+
+
+    function change() {
+      if (currentImage === 1) {
+        image.src = 'bulb.png';
+        currentImage = 2;
+      } else {
+        image.src = 'bulb1.png';
+        currentImage = 1;
+      }
+    }
+
+
+
+
+
+    // ON ka sath bulb or Off pe bulb off
+
+    let img = document.getElementById('img')
+    document.getElementById('on').addEventListener("click", function change() {
+      img.src = "2.png"
+
+    })
+
+
+
+    document.getElementById('off').addEventListener("click", function change() {
+      img.src = "1.png"
+
+    })
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
